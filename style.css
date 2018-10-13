@@ -1,0 +1,249 @@
+
+* {
+  font-family: sans-serif;
+}
+
+
+.intern{
+	background-color: crimson;
+	border: 1px solid crimson;
+}
+.employee{
+	background-color: #778899;
+	border: 1px solid #778899;
+}
+
+.internship{
+	background-color: crimson;
+	border: 1px solid crimson;
+}
+
+.working{
+	background-color: #696969;
+	border: 1px solid #696969;
+}
+
+#carousel {
+	position: relative;
+}
+
+#slides {
+	-webkit-transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+	-moz-transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+	transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+	padding: 0;
+	margin: 0;
+	display: inline-flex;
+}
+
+
+.carousel-slide {
+	margin: 0;
+	padding: 10vh 0;
+	width: 100vw;
+	
+	overflow: hidden;
+	position: relative;
+	list-style-position: inside;
+	list-style-type: none;
+	max-height: 50vh;
+}
+
+.staystill {
+	-webkit-transition: none !important;
+	-moz-transition: none !important;
+	transition: none !important;
+}
+
+.slidepic {
+	margin: 0vw;
+	width: 20vw;
+}
+
+.slide-bg {
+	position: absolute;
+	z-index: -1;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 110vw;
+	min-height: 100%;
+	filter: brightness(50%) blur(12px);
+}
+
+.slidetext {
+	margin: 2vw;
+	width: 42vw;
+	color: white;
+}
+
+.translucent {
+	opacity: 0.75;
+}
+
+
+
+@media (max-width: 760px) {
+	.carousel-slide {
+		max-height: 100vh;
+	}
+
+	.slidetext {
+		width: 80vw;
+	}
+
+	.slidepic {
+		margin-top: 0vh;
+		width: 40vw;
+	}
+}
+
+
+.watch:focus {
+  outline: 0;
+}
+
+.buy {
+	font-size: 15px;
+  	font-weight: bolder;
+  	color: white;
+  	border-radius: 5px;
+  	padding: 10px;
+}
+
+.watch {
+  	font-weight: lighter;
+   	font-size: 15px;
+  	color: white;
+  	background-color: transparent;
+  	border: 1px solid white;
+  	border-radius: 5px;
+  	padding: 10px;
+}
+.watch:focus {
+  outline: 0;
+}
+
+@media (max-width: 760px) {
+  .watch, .buy {
+	font-size: 12px;
+  }
+}
+
+#prev-button, #next-button {
+	position: absolute;
+	top: 50%;
+ 	transform: translateY(-50%);
+ 	
+  	-webkit-transition: all 0.5s;
+  	-moz-transition: all 0.5s;
+  	transition: all 0.5s;
+	
+	border: none;
+	z-index: 2;
+	filter: grayscale(95%);
+	opacity: 0.7;
+  	background-color: transparent;
+}
+
+#prev-button img, #next-button img {
+  	height: 5vh;
+}
+
+#prev-button img {
+  	-ms-transform: rotate(180deg);
+  	-webkit-transform: rotate(180deg);
+  	transform: rotate(180deg);
+}
+
+#prev-button {
+  	left: 3vw;
+}
+
+#next-button {
+  	right: 3vw;
+}
+
+#prev-button:hover, #next-button:hover {
+  	cursor: pointer;
+  	filter: grayscale(0%);
+}
+
+#prev-button:focus, #next-button:focus {
+  	outline: 0;
+}
+
+.glyphicons-chevron-left, .glyphicons-chevron-right {
+	background-color: transparent;
+	position: absolute;
+	opacity: 0.6;
+	filter: grayscale(100%);
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.gray-bg {
+	background-color: #484848;
+	padding: 6vh 2vw 4vh 2vw;
+	color: white;
+}
+.white-bg {
+	background-color: white;
+	padding: 6vh 2vw;
+}
+
+.graytowhite{
+	background-image: linear-gradient(#484848,white);
+	/*-webkit and -moz so its supported by chrome, firefox, and safari*/
+	background-image: -webkit-linear-gradient(#484848,white);
+	background-image: -moz-linear-gradient(#484848,white);
+	color:white;
+	padding: 4vh 2vw 8vh 2vw;
+}
+
+#title {
+	font-size: 24px;
+	font-weight: bolder;
+}
+
+.para {
+	overflow-x: hidden;
+	font-size:16px;
+	font-weight: lighter;
+}
+/*col-PT is for picture then text and col-TP is for text then pic*/
+
+.col-PT{
+	flex-direction: row-reverse;
+}
+.col-TP{
+	flex-direction: row;
+}
+
+.fulltext {
+	margin: 2vh 1vw 2vh 1vw;
+	width:500px;
+}
+
+#image{
+	max-width: 100%;
+	height: auto;
+}
+
+.col-PT, .col-TP {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	flex-wrap: -webkit-wrap;
+	flex-wrap: wrap;
+	/*this will make it switch from horizontal to vertical layout*/
+	justify-content: center;
+	align-items: center;
+  
+}
+
+
+
+
